@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  api:
+    build: ./API
+    container_name: API
+    ports:
+      - '4000:4000'
+    networks:
+      postgres-network:
+        ipv4_address: 172.21.0.9
+    environment:
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=admin
+      - DB_DATABASE=biblioteca     
+
+  front:
+    build: ./front
+    container_name: FRONT
+    ports:
+      - '3000:3000'
+    networks:
+      postgres-network:
+        ipv4_address: 172.21.0.10
+
+networks:
+  postgres-network:
+    external:
+      name: postgres-network
+
+  

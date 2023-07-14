@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@1;100;200;300&display=swap');
+
+h1{
+    margin: 1rem;
+}
+
+*{
+    font-family: 'Ysabeau Infant', sans-serif;
+}  
+
+/* Add this CSS in your main CSS file or component */
+.cool-form {
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+    background-color: white;
+  }
+  
+  .cool-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .cool-form input[type='text'] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76ba1b;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .cool-form button{
+    padding: 10px 20px;
+    background-color: #76ba1b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .cool-form button:hover {
+    background-color: #3b7e10;
+  }
+  
+
+      
+  .boton-regreso {
+    margin: 1rem;
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: black;
+    font-family: Ysabeau Infant;
+    font-size: 20px;
+    cursor: pointer;
+    list-style-type: none;
+  }
+
+  .boton-regreso span{
+    margin: 1rem;
+  }
+
+  .internoLink{
+    margin: 1rem;
+    border-radius: 5px;
+    color: black;
+    font-family: Ysabeau Infant;
+    font-size: 15px;
+    cursor: pointer;
+    list-style-type: none;
+  }
